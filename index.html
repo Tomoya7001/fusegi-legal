@@ -57,7 +57,7 @@
 
   <header>
     <h1>Fusegi プライバシーポリシー</h1>
-    <div class="sub">最終更新日: 2026年7月28日</div>
+    <div class="sub">最終更新日: 2026年11月17日</div>
   </header>
 
   <p>Fusegi（以下「本アプリ」）は、ユーザーのプライバシーを最優先に設計された広告ブロックブラウザです。本ポリシーは、本アプリが取得・利用する情報とその取り扱いについて説明します。</p>
@@ -77,17 +77,19 @@
     <li>閲覧履歴、ブックマーク</li>
     <li>ブロック統計（ブロックした広告の件数・種別・日別・サイト別の内訳）</li>
     <li>テーマ等のアプリ設定</li>
-    <li>広告レポート機能で記録した広告の情報</li>
+    <li>広告レポート機能で端末内に記録した情報（画面の画像を含みます。画面の画像は送信されません）</li>
   </ul>
   <p>本アプリは一般的なWebブラウザであり、閲覧するWebサイトの内容を収集・追跡しません。</p>
 
-  <h3>2.2 任意（オプトイン）で送信される情報</h3>
-  <p>ユーザーが明示的に同意した場合に限り、以下の情報を広告ブロック精度の向上のために匿名で送信します。同意しない場合、これらの情報は送信されません（初期設定はOFF）。設定画面でいつでも変更できます。</p>
+  <h3>2.2 ユーザーの操作と同意により送信される情報</h3>
+  <p>以下の情報は、ユーザーが報告の操作を行い、初回に表示される確認画面で同意した場合に限り、広告ブロックの精度向上のために送信されます。同意しない場合は送信されません（初期設定はOFF）。設定画面でいつでも変更できます。</p>
   <ul>
-    <li><strong>広告レポート</strong>（設定で「匿名レポート送信に協力」をONにした場合のみ）: 報告された広告要素の情報（HTMLの構造・セレクタ・配信元URL）、広告が表示されていたページのURL、アプリのバージョン、OSの種別・バージョン。</li>
-    <li><strong>不具合報告</strong>（ユーザーが報告フォームから送信した場合のみ）: 報告内容、アプリのバージョン、OSの種別。ユーザーが選択した場合のみ、発生時のページURL・動作ログを含みます。</li>
+    <li><strong>サイトの報告</strong>（「このページの広告を報告」を押したとき）: 報告したページのアドレス（「?」以降と「#」以降は削除します）、そのページが読み込んだ外部の配信元のアドレス（同じく「?」以降を削除します）、広告と思われる要素の種類・位置・大きさ、そのページでのブロック件数、アプリのバージョン、OSの種別。</li>
+    <li><strong>広告レポート</strong>（広告をタップして報告したとき）: タップした要素の種類・セレクタ・位置・大きさ、その要素のリンク先のアドレス（「?」以降を削除します）、広告が表示されていたページのアドレス（「?」以降を削除します）、アプリのバージョン、OSの種別。</li>
+    <li><strong>不具合報告</strong>（ユーザーが報告フォームから送信した場合のみ）: 報告内容、アプリのバージョン、OSの種別・バージョン。ユーザーが選択した場合のみ、発生時のページURL・動作ログを含みます。</li>
   </ul>
-  <p>これらの匿名データは、氏名・端末を特定できる識別子・広告IDを含みません。</p>
+  <p>サイトの報告と広告レポートでは、氏名、連絡先、端末を特定できる識別子、広告ID、閲覧履歴、ブックマーク、ページの本文、画面の画像、入力した内容は送信しません。報告は「どのサイトに広告があったか」として記録され、誰が報告したかは記録しません。</p>
+  <p>送信された情報は、Supabase, Inc. のサービス（日本・東京リージョン）に保存されます。通信の性質上、送信時のIPアドレスが同サービスのアクセスログに一時的に記録されることがありますが、開発者はこれを報告と結び付けて利用しません。</p>
 
   <h2>3. 課金・サブスクリプション</h2>
   <p>本アプリのサブスクリプション（Fusegi Pro）は、Appleの App Store を通じて処理されます。お支払い情報は Apple が管理し、本アプリが取得することはありません。購入状態の管理には RevenueCat, Inc. のサービスを利用します。RevenueCat には、購入状態を管理するための匿名の識別子と購入情報が送信されます。詳細は RevenueCat のプライバシーポリシーをご確認ください。</p>
@@ -114,7 +116,7 @@
   <div class="en">
     <header>
       <h1>Fusegi Privacy Policy</h1>
-      <div class="sub">Last updated: July 28, 2026</div>
+      <div class="sub">Last updated: November 17, 2026</div>
     </header>
 
     <p>Fusegi ("the App") is an ad-blocking browser designed with your privacy as the top priority. This policy explains what information the App collects and how it is handled.</p>
@@ -133,17 +135,19 @@
       <li>Browsing history and bookmarks</li>
       <li>Block statistics (count, type, daily and per-site breakdown)</li>
       <li>App settings such as theme</li>
-      <li>Information recorded by the ad-report feature</li>
+      <li>Information recorded on your device by the ad-report feature (including screenshots; screenshots are never sent)</li>
     </ul>
     <p>The App is a general-purpose web browser and does not collect or track the content of the sites you visit.</p>
 
-    <h3>2.2 Sent only with your explicit opt-in</h3>
-    <p>Only if you explicitly consent, the following is sent anonymously to improve ad-blocking accuracy. It is OFF by default and can be changed anytime in Settings.</p>
+    <h3>2.2 Sent only when you report and consent</h3>
+    <p>The following is sent, to improve ad-blocking accuracy, only when you perform a report action and agree on the confirmation screen shown the first time. Nothing is sent if you do not agree (OFF by default). You can change this anytime in Settings.</p>
     <ul>
-      <li><strong>Ad reports</strong> (only if you enable "Help with anonymous reports"): the reported ad element (HTML structure, selector, source URL), the page URL where the ad appeared, the app version, and OS type/version.</li>
-      <li><strong>Bug reports</strong> (only when you submit the form): your message, app version, and OS type; and, only if you choose to include them, the page URL and logs at the time.</li>
+      <li><strong>Site report</strong> (when you tap "Report ads on this page"): the address of the reported page (everything after "?" and "#" is removed), the addresses of third-party sources that page loaded (likewise without "?"), the type, position and size of elements that look like ads, the number of blocks on that page, the app version, and the OS type.</li>
+      <li><strong>Ad report</strong> (when you tap an ad to report it): the tapped element's type, selector, position and size, its link address (without "?"), the address of the page where it appeared (without "?"), the app version, and the OS type.</li>
+      <li><strong>Bug report</strong> (only when you submit the form): your message, the app version, and the OS type and version; and, only if you choose to include them, the page URL and logs at the time.</li>
     </ul>
-    <p>This anonymous data contains no name, no device-identifying identifier, and no advertising ID.</p>
+    <p>Site reports and ad reports never include your name, contact details, any device-identifying identifier, advertising ID, browsing history, bookmarks, page text, screenshots, or anything you typed. A report is recorded as "which site showed ads"; who reported it is not recorded.</p>
+    <p>Submitted data is stored with Supabase, Inc. (Tokyo, Japan region). As with any network request, the sending IP address may be kept temporarily in that service's access logs; the developer does not use it in connection with reports.</p>
 
     <h2>3. Subscriptions</h2>
     <p>The subscription (Fusegi Pro) is processed through Apple's App Store. Payment information is handled by Apple and is not accessible to the App. Purchase state is managed via RevenueCat, Inc., which receives an anonymous identifier and purchase information. See RevenueCat's privacy policy for details.</p>
